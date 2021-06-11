@@ -1,4 +1,4 @@
-variable "count" {
+variable "pet_count" {
   type        = number
   description = "Count of random_pet."
   default     = 100
@@ -11,7 +11,7 @@ variable "length" {
 }
 
 resource "random_pet" "main" {
-  count = var.count
+  count = var.pet_count
 
   length    = var.length
   separator = "-"
