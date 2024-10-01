@@ -7,7 +7,7 @@ variable "pet_count" {
 variable "length" {
   type        = number
   description = "Length of random_pet."
-  default     = 20
+  default     = 100
 }
 
 resource "random_pet" "main" {
